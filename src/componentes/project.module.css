@@ -1,0 +1,224 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f9;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #4472c4;
+  height: 10vh;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navigators {
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 3rem;
+  margin-left: 7rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.navigatorbtn {
+  border: none;
+  background-color: #ffffff;
+  color: #4472c4;
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #4472c4;
+  color: #ffffff;
+}
+
+.navigatorbtn:hover {
+  background-color: #3360a3;
+  /* color: #ffffff; */
+}
+
+/* Main Content */
+.AddNewPerson {
+  width: 92%;
+  height: auto;
+  border: 1px solid #ddd;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pagetitle {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: #4472c4;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #4472c4;
+  color: white;
+}
+
+thead th {
+  padding: 10px;
+  text-align: center;
+}
+
+tbody td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tr {
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* Button Styling */
+.Addbtn,
+.rowbtns,
+.findbtn {
+  border: none;
+  background-color: #4472c4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: flex;
+  /* justify-content: center; */
+  margin: 0 auto;
+}
+
+.Addbtn:hover,
+.rowbtns:hover,
+.findbtn:hover {
+  background-color: #3360a3;
+}
+
+.rowbtns {
+  text-decoration: underline;
+  color: #4472c4;
+  background-color: white;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+form > input {
+  width: 18%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  form > input {
+    width: 100%;
+  }
+}
+
+/* Form Container */
+.formcontainer {
+  background-color: #4472c4;
+  color: white;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+/* Search Bar */
+.find {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.findform {
+  display: flex;
+  width: 100%;
+}
+
+.searchaadhar {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.findbtn {
+  width: 30%;
+}
+
+.searchaadhar:focus {
+  outline: none;
+  border: 2px solid #4472c4;
+}
+
+/* Result Container */
+.result {
+  margin: 2% 3% 0% 3%;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar,
+  .navigators,
+  .AddNewPerson {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .navigatorbtn,
+  .Addbtn,
+  .findbtn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  table,
+  .formcontainer {
+    width: 100%;
+  }
+
+  .find {
+    width: 100%;
+  }
+}
