@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <>
       <nav className={styles.navbar}>
-        <h3>Aman Kumar Directory App</h3>
+        <h3>vaedunnisa Directory App</h3>
       </nav>
       <div className={styles.navigators}>
         <button className={styles.navigatorbtn }onClick={() => navigate("/")}>
